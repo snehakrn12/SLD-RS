@@ -1,57 +1,50 @@
-##Sign Language Detection and Recommendation System
+Sign Language Detection and Recommendation System
 
-#Overview
+Overview
 
-- I developed this Sign Language Detection and Recommendation System to bridge the communication gap for individuals who are deaf or hard of hearing.
+The Sign Language Detection and Recommendation System was developed to bridge the communication gap for individuals who are deaf or hard of hearing. This innovative application utilizes computer vision and machine learning to interpret sign language gestures and convert them into text or speech. Additionally, it provides contextual recommendations for appropriate responses, ensuring more inclusive and effective communication.
 
-- This innovative application uses computer vision and machine learning to interpret sign language gestures and convert them into text or speech.
+Key Features
 
-- It also provides contextual recommendations for appropriate responses.
+Real-time Gesture Recognition: Detects and translates sign language gestures into text or speech in real-time.
 
-- The aim is to make communication more inclusive and effective.
+Contextual Recommendations: Offers appropriate response suggestions based on interpreted gestures.
 
-#Key Features
+User-Friendly Interface: Features a simple and intuitive interface for seamless interaction.
 
-- Real-time Gesture Recognition: Detects and translates sign language gestures into text or speech in real-time.
+Multilingual Support: Recognizes gestures from multiple sign languages (e.g., ASL, BSL).
 
-- Contextual Recommendations: Suggests appropriate responses based on the interpreted gestures.
+Customizable Models: Extendable to include additional gestures and languages as needed.
 
-- User-Friendly Interface: Simple and intuitive interface for seamless interaction.
+Technologies Used
 
-- Multilingual Support: Recognizes gestures in multiple sign languages (e.g., ASL, BSL).
+Programming Language: Python
 
-- Customizable Models: Extendable for adding new gestures and languages.
+Libraries & Frameworks:
 
-#Technologies Used
+OpenCV (image processing)
 
-- Programming Language: Python
+TensorFlow/Keras (deep learning models)
 
-- Libraries & Frameworks:
+TextBlob (natural language processing)
 
-OpenCV (for image processing)
+Hardware: Compatible with any camera-enabled device
 
-TensorFlow/Keras (for deep learning models)
+How It Works
 
-TextBlob (for natural language processing)
+Gesture Input: Captures hand gestures using a camera.
 
-Hardware: Any camera-enabled device
+Gesture Recognition: Processes the input via pre-trained models to identify the gesture.
 
-#How It Works
+Translation: Converts the recognized gesture into text or speech.
 
-- Gesture Input: The system captures hand gestures using a camera.
+Recommendation: Provides suggested responses based on context to enhance communication.
 
-- Gesture Recognition: Processes the input using pre-trained models to identify the gesture.
-
-- Translation: Converts the recognized gesture into corresponding text or speech.
-
-- Recommendation: Analyzes context and provides suggested responses to improve communication.
-
-#License
+License
 
 This project is licensed under the MIT License.
 
-#Acknowledgments
+Acknowledgments
 
-- Inspired by the need to create inclusive technology for the hearing-impaired community.
+This system was inspired by the need to create inclusive technologies for the hearing-impaired community. For queries or suggestions, please reach out to snehakrn.96@gmail.com.
 
-- For any queries or suggestions, feel free to contact me at snehakrn.96@gmail.com

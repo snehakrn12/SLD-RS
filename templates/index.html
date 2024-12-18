@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Recognition</title>
+    <style>
+        body {
+            .anton-regular {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            background-image: url("https://www.pixel4k.com/wp-content/uploads/2024/01/after-sunset-minimal-2024-4k-3840x2160_1705278513.jpg.webp");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+        .anton-regular {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            }
+            margin-top: 20px;
+            width: 100%;
+            color: white;
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+            background-color: none;
+            color: black;
+        }
+
+        h2 {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: black;
+
+        }
+
+        p {
+            color: black;
+
+        }
+
+        .video_area {
+            width: 40%;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        #video_feed {
+            height: 600px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+
+        #subtitle_area {
+            margin: 0 auto;
+            width: 50%;
+            height: 150px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+
+        }
+
+        #subtitle_text {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>SIGN LANGUAGE DETECTION </h1>
+    </div>
+
+    <div class="video_area">
+        <img id="video_feed" src="{{ url_for('video_feed') }}" width="100%" height="auto">
+    </div>
+    <div id="subtitle_area">
+        <h2>OUTCOME</h2>
+        <h3 id="subtitle_text"></h3>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Update the value of the variable every 1 second
+        setInterval(function() {
+            // Get the value of the variable from the Flask app
+            $.get("/subtitles", function(data) {
+                // Update the value of the variable in the HTML template
+                $("#subtitle_text").text(data);
+            });
+        }, 1000);
+    </script>
+</body>
+</html>

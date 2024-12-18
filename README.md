@@ -4,6 +4,11 @@ Overview
 
 The Sign Language Detection and Recommendation System was developed to bridge the communication gap for individuals who are deaf or hard of hearing. This innovative application utilizes computer vision and machine learning to interpret sign language gestures and convert them into text or speech. Additionally, it provides contextual recommendations for appropriate responses, ensuring more inclusive and effective communication.
 
+![Screenshot 2024-11-22 130410](https://github.com/user-attachments/assets/5b65d5d7-3f5c-4788-aa4d-ae00a5851351)
+![Screenshot 2024-11-22 130452](https://github.com/user-attachments/assets/d7efbbd0-6b7b-4609-97d2-a57d39e3512b)
+![Screenshot 2024-11-22 130546](https://github.com/user-attachments/assets/d1c67afe-efc2-4f13-bd78-9e9515bdb9ed)
+![Screenshot 2024-11-22 131037](https://github.com/user-attachments/assets/22a5c57a-c013-4844-a674-964fb5c248fd)
+
 Key Features
 
 Real-time Gesture Recognition: Detects and translates sign language gestures into text or speech in real-time.
